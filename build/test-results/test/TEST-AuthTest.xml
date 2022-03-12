@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AuthTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-03-12T10:28:10" hostname="DESKTOP-Q3JS99O" time="6.157">
+  <properties/>
+  <testcase name="shouldBeNotAuthWithInvalidPassword()" classname="AuthTest" time="3.94"/>
+  <testcase name="shouldBeNotAuthWithBlockedUser()" classname="AuthTest" time="0.892"/>
+  <testcase name="shouldBeAuthWithActiveUser()" classname="AuthTest" time="0.53"/>
+  <testcase name="shouldBeNotAuthWithInvalidLogin()" classname="AuthTest" time="0.792"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "derrick.kautzer",
+    "password": "kzbbk53iq7m8vn",
+    "status": "active"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "reina.haley",
+    "password": "q3te86tmn",
+    "status": "blocked"
+}
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 40582
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+мар. 12, 2022 1:28:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
